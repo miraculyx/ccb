@@ -1,4 +1,4 @@
-<h1><a name="synopsis">SYNOPSIS</a></h1>
+<h1>DESCRIPTION</h1>
 <p>This PERL Script fetches all  CISCO  device configurations (running configuration) 
 to a seperate TFTP-Server via SNMP. 
 The  device-file <strong>&quot;file&quot;</strong> contains  all  the addresses (or names) of the devices. 
@@ -7,11 +7,7 @@ differ from each other.
 You have to know the SNMP READ-WRITE Community String of the CISCO devices.</p>
 <p>As a result of the operation, it will be printed a short inventory of the network devices (Hostname, Model-Type, Serial-Number and Software Version) and the status 
 of the operation for each device.</p>
-<p></p>
-<p>
-</p>
-<hr />
-<h1><a name="description">DESCRIPTION</a></h1>
+
 <p>The script first gets the Hostname of the device (system.sysName.0). 
 According to the result of this first operation it was also checked, if the device is 
 alive and ready for the configuration transfer.
