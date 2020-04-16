@@ -1,5 +1,48 @@
-Cisco Configuration Backup (CCB)
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CCB - created by Gerhard Lange</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:" />
+</head>
 
+<body style="background-color: white">
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#device_file">Device-file</a></li>
+	<li><a href="#cisco_device_configurations">CISCO device configurations</a></li>
+	<li><a href="#tftp_server_setup_under_linux">TFTP-Server Setup under LINUX</a></li>
+	<li><a href="#tftp_server_under_windows">TFTP-Server under Windows</a></li>
+	<li><a href="#model_typs">Model-Typs</a></li>
+	<li><a href="#usage">USAGE</a></li>
+	<li><a href="#example">EXAMPLE</a></li>
+	<li><a href="#error_messages">ERROR Messages</a></li>
+	<li><a href="#standalone_under_windows">Standalone under Windows</a></li>
+	<li><a href="#copyright">COPYRIGHT</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>CCB - created by Gerhard Lange</p>
+<p>
+</p>
+<hr />
 <h1><a name="synopsis">SYNOPSIS</a></h1>
 <p>This PERL Script fetches all  CISCO  device configurations (running configuration) 
 to a seperate TFTP-Server via SNMP. 
@@ -57,8 +100,8 @@ timeout of 2 seconds.</p>
 <h1><a name="device_file">Device-file</a></h1>
 <p>The construction of the device-file can be made in two different ways.</p>
 <pre>
-</pre>
-        CASE A:
+
+        CASE A:</pre>
 <pre>
         <span class="variable">In</span> <span class="variable">the</span> <span class="variable">case</span><span class="operator">,</span> <span class="variable">you</span> <span class="variable">have</span> <span class="variable">different</span> <span class="variable">SNMP</span> <span class="variable">comunity</span><span class="operator">-</span><span class="variable">strings</span> <span class="keyword">for</span> <span class="variable">every</span> <span class="variable">device</span> <span class="variable">in</span> <span class="variable">your</span> <span class="variable">network</span><span class="operator">.</span>
         <span class="variable">You</span> <span class="variable">have</span> <span class="variable">to</span> <span class="variable">specify</span> <span class="variable">the</span> <span class="variable">devices</span> <span class="operator">(</span><span class="variable">IP</span> <span class="variable">address</span> <span class="keyword">or</span> <span class="variable">names</span><span class="operator">)</span> <span class="variable">in</span> <span class="variable">the</span> <span class="variable">file</span> <span class="keyword">and</span> <span class="variable">the</span> <span class="variable">coresponding</span> 
@@ -285,6 +328,9 @@ to install the file &quot;perl58.dll&quot; in one of the directories, which will
 <p>
 </p>
 <hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>Gerhard Lange &lt;<a href="mailto:lange.gerhard@gmail.com">lange.gerhard@gmail.com</a>&gt;</p>
+
 </body>
 
 </html>
