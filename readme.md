@@ -50,8 +50,8 @@ timeout of 2 seconds.</p>
 <p>The construction of the device-file can be made in two different ways.</p>
 <pre>
 <b>CASE A:</b>
-<p>In the case, you have different SNMP comunity-strings for every device in your network. You have to specify the devices
-IP address or names) in the file and the coresponding SNMP Read-Write Community String for this device. 
+<p>In the case, you have different SNMP comunity-strings for every device in your network. You have to specify the
+devices IP address or names) in the file and the coresponding SNMP Read-Write Community String for this device. 
 The last ";" is not required, but it helps to see if there are spaces added at the end of a community-string.
 You can insert comments in your device-file. All comments start with an "#", "!" or an whitespace (SPACE, TAB).</p>
 
@@ -71,16 +71,19 @@ gw-rm-007;secret;
 ccb.pl device.txt 192.168.1.1 "" 5 /ROMA/
 
 
-<b>CASE B:</b>
-                  
-In the case, you have the same SNMP comunity-string for every device, it is not neccessary to insert the SNMP Community-string into
-the device-file. It is important to specify only the IP Addresses of the devices (or IP Names) in the file. 
-All other community-strings, which are inserted in the device-file ("secret" in line 2 in this example), will be ignored now. 
-The last ";" is not required, but it helps to see if you have added spaces at the end of the Device-Name.
+<b>CASE B:</b>                
+<p>In the case, you have the same SNMP comunity-string for every device, it is not neccessary to insert the
+SNMP Community-string into the device-file. It is important to specify only the IP Addresses of the devices
+(or IP Names) in the file. 
+All other community-strings, which are inserted in the device-file ("secret" in line 2 in this example),
+will be ignored now. 
+The last ";" is not required, but it helps to see if you have added spaces at the end of the Device-Name.</p>
 
-In the following example all the configuration files will be saved into the directory /MILANO/ of the TFTP-Server.
-The SNMP Community-String for all devices is "write". There is a timeout of 2 seconds between one and an other device fetching. 
-All the configuration files have a Suffix of "*.cfg". The Default Suffix is "*.wri".
+<p>In the following example all the configuration files will be saved into the directory /MILANO/ of the
+TFTP-Server.
+The SNMP Community-String for all devices is "write". There is a timeout of 2 seconds between one and an
+other device fetching. 
+All the configuration files have a Suffix of "*.cfg". The Default Suffix is "*.wri".</p>
         
 /#  Start of the Network Device File
 gw-mi-23;
