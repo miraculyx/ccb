@@ -51,7 +51,6 @@ timeout of 2 seconds.</p>
 <h1>Device-file</h1>
 <p>The construction of the device-file can be made in two different ways.</p>
 <pre>
-</pre>
 <b>CASE A:</b>
 <pre>
 In the case, you have different SNMP comunity-strings for every device in your network.
@@ -101,6 +100,8 @@ sw-mi-core1;secret
 /# End of Network Device File
         
 ccb.pl device.txt tftp-server write 2 /MILANO/ .cfg
+
+</pre>
 
 <h1>CISCO device configurations</h1>
 <p>The CISCO devices should have a minimal configuration for doing SNMP:</p>
