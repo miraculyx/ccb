@@ -54,60 +54,55 @@ timeout of 2 seconds.</p>
 </pre>
 CASE A:
 <pre>
-        <span class="variable">In</span> <span class="variable">the</span> <span class="variable">case</span><span class="operator">,</span> <span class="variable">you</span> <span class="variable">have</span> <span class="variable">different</span> <span class="variable">SNMP</span> <span class="variable">comunity</span><span class="operator">-</span><span class="variable">strings</span> <span class="keyword">for</span> <span class="variable">every</span> <span class="variable">device</span> <span class="variable">in</span> <span class="variable">your</span> <span class="variable">network</span><span class="operator">.</span>
-        <span class="variable">You</span> <span class="variable">have</span> <span class="variable">to</span> <span class="variable">specify</span> <span class="variable">the</span> <span class="variable">devices</span> <span class="operator">(</span><span class="variable">IP</span> <span class="variable">address</span> <span class="keyword">or</span> <span class="variable">names</span><span class="operator">)</span> <span class="variable">in</span> <span class="variable">the</span> <span class="variable">file</span> <span class="keyword">and</span> <span class="variable">the</span> <span class="variable">coresponding</span> 
-        <span class="variable">SNMP</span> <span class="variable">Read</span><span class="operator">-</span><span class="variable">Write</span> <span class="variable">Community</span> <span class="variable">String</span> <span class="keyword">for</span> <span class="variable">this</span> <span class="variable">device</span><span class="operator">.</span> 
-        <span class="variable">The</span> <span class="keyword">last</span> <span class="string">";"</span> <span class="variable">is</span> <span class="keyword">not</span> <span class="variable">required</span><span class="operator">,</span> <span class="variable">but</span> <span class="variable">it</span> <span class="variable">helps</span> <span class="variable">to</span> <span class="variable">see</span> <span class="keyword">if</span> <span class="variable">there</span> <span class="variable">are</span> <span class="variable">spaces</span> <span class="variable">added</span> <span class="variable">at</span> <span class="variable">the</span> <span class="variable">end</span> 
-        <span class="variable">of</span> <span class="variable">a</span> <span class="variable">community</span><span class="operator">-</span><span class="variable">string</span><span class="operator">.</span> <span class="variable">You</span> <span class="variable">can</span> <span class="variable">insert</span> <span class="variable">comments</span> <span class="variable">in</span> <span class="variable">your</span> <span class="variable">device</span><span class="operator">-</span><span class="variable">file</span><span class="operator">.</span> 
-        <span class="variable">All</span> <span class="variable">comments</span> <span class="variable">start</span> <span class="variable">with</span> <span class="variable">an</span> <span class="string">"#"</span><span class="operator">,</span> <span class="string">"!"</span> <span class="keyword">or</span> <span class="variable">an</span> <span class="variable">whitespace</span> <span class="operator">(</span><span class="variable">SPACE</span><span class="operator">,</span> <span class="variable">TAB</span><span class="operator">).</span>
-</pre>
-<pre>
+In the case, you have different SNMP comunity-strings for every device in your network.
+You have to specify the devices (IP address or names) in the file and the coresponding 
+SNMP Read-Write Community String for this device. 
+The last ";" is not required, but it helps to see if there are spaces added at the end 
+of a community-string. You can insert comments in your device-file. 
+All comments start with an "#", "!" or an whitespace (SPACE, TAB).
+
 In the following example all the configuration files will be saved into the directory 
 /ROMA/ of the TFTP-Server (192.168.1.1). 
-The &quot;&quot; indicates to consider the Community-Strings from the device-file.
-There is a timeout of 5 seconds between one and an other device fetching.</pre>
-<pre>
-                <span class="comment"># Start of the Network Device File</span>
-                <span class="variable">rtr</span><span class="operator">-</span><span class="variable">rm</span><span class="operator">-</span><span class="number">023</span><span class="operator">;</span><span class="keyword">write</span><span class="operator">;</span>
-                <span class="variable">sw</span><span class="operator">-</span><span class="variable">rm</span><span class="operator">-</span><span class="number">009</span><span class="operator">;</span><span class="variable">tulpe</span><span class="operator">;</span>
-                <span class="number">192.168</span><span class="operator">.</span><span class="number">1.253</span><span class="operator">;</span><span class="variable">orange</span><span class="operator">;</span>
-                <span class="operator">!</span> <span class="variable">Backbone</span>
-                <span class="number">192.168</span><span class="operator">.</span><span class="number">10.1</span><span class="operator">;</span><span class="variable">secret</span><span class="operator">;</span>  
-                <span class="variable">gw</span><span class="operator">-</span><span class="variable">rm</span><span class="operator">-</span><span class="number">007</span><span class="operator">;</span><span class="variable">secret</span><span class="operator">;</span> 
-                <span class="comment"># End of Network Device File</span>
-                
-                <span class="variable">ccb</span><span class="operator">.</span><span class="variable">pl</span> <span class="variable">device</span><span class="operator">.</span><span class="variable">txt</span> <span class="number">192.168</span><span class="operator">.</span><span class="number">1.1</span> <span class="string">""</span> <span class="number">5</span> <span class="operator">/</span><span class="variable">ROMA</span><span class="operator">/</span>
-                        
+The "" indicates to consider the Community-Strings from the device-file.
+There is a timeout of 5 seconds between one and an other device fetching.
+
+# Start of the Network Device File
+rtr-rm-023;write;
+sw-rm-009;tulpe;
+192.168.1.253;orange;
+! Backbone
+192.168.10.1;secret;  
+gw-rm-007;secret; 
+# End of Network Device File
+
+ccb.pl device.txt 192.168.1.1 "" 5 /ROMA/
+
+
+CASE B: 
                   
-                        <span class="variable">CASE</span> <span class="variable">B</span><span class="operator">:</span> 
-                  
-                        <span class="variable">In</span> <span class="variable">the</span> <span class="variable">case</span><span class="operator">,</span> <span class="variable">you</span> <span class="variable">have</span> <span class="variable">the</span> <span class="variable">same</span> <span class="variable">SNMP</span> <span class="variable">comunity</span><span class="operator">-</span><span class="variable">string</span> <span class="keyword">for</span> <span class="variable">every</span> <span class="variable">device</span><span class="operator">,</span> <span class="variable">it</span> <span class="variable">is</span> <span class="keyword">not</span> 
-                        <span class="variable">neccessary</span> <span class="variable">to</span> <span class="variable">insert</span> <span class="variable">the</span> <span class="variable">SNMP</span> <span class="variable">Community</span><span class="operator">-</span><span class="variable">string</span> <span class="variable">into</span> <span class="variable">the</span> <span class="variable">device</span><span class="operator">-</span><span class="variable">file</span><span class="operator">.</span> <span class="variable">It</span> <span class="variable">is</span> <span class="variable">important</span> 
-                        <span class="variable">to</span> <span class="variable">specify</span> <span class="variable">only</span> <span class="variable">the</span> <span class="variable">IP</span> <span class="variable">Addresses</span> <span class="variable">of</span> <span class="variable">the</span> <span class="variable">devices</span> <span class="operator">(</span><span class="keyword">or</span> <span class="variable">IP</span> <span class="variable">Names</span><span class="operator">)</span> <span class="variable">in</span> <span class="variable">the</span> <span class="variable">file</span><span class="operator">.</span> 
-                        <span class="variable">All</span> <span class="variable">other</span> <span class="variable">community</span><span class="operator">-</span><span class="variable">strings</span><span class="operator">,</span> <span class="variable">which</span> <span class="variable">are</span> <span class="variable">inserted</span> <span class="variable">in</span> <span class="variable">the</span> <span class="variable">device</span><span class="operator">-</span><span class="variable">file</span> <span class="operator">(</span><span class="string">"secret"</span> <span class="variable">in</span> 
-                        <span class="variable">line</span> <span class="number">2</span> <span class="variable">in</span> <span class="variable">this</span> <span class="variable">example</span><span class="operator">),</span> <span class="variable">will</span> <span class="variable">be</span> <span class="variable">ignored</span> <span class="variable">now</span><span class="operator">.</span> 
-                        <span class="variable">The</span> <span class="keyword">last</span> <span class="string">";"</span> <span class="variable">is</span> <span class="keyword">not</span> <span class="variable">required</span><span class="operator">,</span> <span class="variable">but</span> <span class="variable">it</span> <span class="variable">helps</span> <span class="variable">to</span> <span class="variable">see</span> <span class="keyword">if</span> <span class="variable">you</span> <span class="variable">have</span> <span class="variable">added</span> <span class="variable">spaces</span> <span class="variable">at</span> <span class="variable">the</span> 
-                        <span class="variable">end</span> <span class="variable">of</span> <span class="variable">the</span> <span class="variable">Device</span><span class="operator">-</span><span class="variable">Name</span><span class="operator">.</span>
-</pre>
-<pre>
-        <span class="variable">In</span> <span class="variable">the</span> <span class="variable">following</span> <span class="variable">example</span> <span class="variable">all</span> <span class="variable">the</span> <span class="variable">configuration</span> <span class="variable">files</span> <span class="variable">will</span> <span class="variable">be</span> <span class="variable">saved</span> <span class="variable">into</span> <span class="variable">the</span> <span class="variable">directory</span> 
-        <span class="operator">/</span><span class="variable">MILANO</span><span class="operator">/</span> <span class="variable">of</span> <span class="variable">the</span> <span class="variable">TFTP</span><span class="operator">-</span><span class="variable">Server</span><span class="operator">.</span> <span class="variable">The</span> <span class="variable">SNMP</span> <span class="variable">Community</span><span class="operator">-</span><span class="variable">String</span> <span class="keyword">for</span> <span class="variable">all</span> <span class="variable">devices</span> <span class="variable">is</span> <span class="string">"write"</span><span class="operator">.</span>
-        <span class="variable">There</span> <span class="variable">is</span> <span class="variable">a</span> <span class="variable">timeout</span> <span class="variable">of</span> <span class="number">2</span> <span class="variable">seconds</span> <span class="variable">between</span> <span class="variable">one</span> <span class="keyword">and</span> <span class="variable">an</span> <span class="variable">other</span> <span class="variable">device</span> <span class="variable">fetching</span><span class="operator">.</span> 
-        <span class="variable">All</span> <span class="variable">the</span> <span class="variable">configuration</span> <span class="variable">files</span> <span class="variable">have</span> <span class="variable">a</span> <span class="variable">Suffix</span> <span class="variable">of</span> <span class="string">"*.cfg"</span><span class="operator">.</span> <span class="variable">The</span> <span class="variable">Default</span> <span class="variable">Suffix</span> <span class="variable">is</span> <span class="string">"*.wri"</span><span class="operator">.</span>
+In the case, you have the same SNMP comunity-string for every device, it is not 
+neccessary to insert the SNMP Community-string into the device-file. It is important 
+to specify only the IP Addresses of the devices (or IP Names) in the file. 
+All other community-strings, which are inserted in the device-file ("secret" in 
+line 2 in this example), will be ignored now. 
+The last ";" is not required, but it helps to see if you have added spaces at the 
+end of the Device-Name.
+
+In the following example all the configuration files will be saved into the directory 
+/MILANO/ of the TFTP-Server. The SNMP Community-String for all devices is "write".
+There is a timeout of 2 seconds between one and an other device fetching. 
+All the configuration files have a Suffix of "*.cfg". The Default Suffix is "*.wri".
         
-                <span class="operator">!</span> <span class="variable">Start</span> <span class="variable">of</span> <span class="variable">the</span> <span class="variable">Network</span> <span class="variable">Device</span> <span class="variable">File</span>
-                <span class="variable">gw</span><span class="operator">-</span><span class="variable">mi</span><span class="operator">-</span><span class="number">23</span><span class="operator">;</span>
-                <span class="variable">sw</span><span class="operator">-</span><span class="variable">mi</span><span class="operator">-</span><span class="variable">core1</span><span class="operator">;</span><span class="variable">secret</span>
-                <span class="number">192.168</span><span class="operator">.</span><span class="number">10.253</span>
-                <span class="number">192.168</span><span class="operator">.</span><span class="number">10.1</span>
-                <span class="operator">!</span> <span class="variable">End</span> <span class="variable">of</span> <span class="variable">Network</span> <span class="variable">Device</span> <span class="variable">File</span>
+! Start of the Network Device File
+gw-mi-23;
+sw-mi-core1;secret
+192.168.10.253
+192.168.10.1
+! End of Network Device File
         
-        <span class="variable">ccb</span><span class="operator">.</span><span class="variable">pl</span> <span class="variable">device</span><span class="operator">.</span><span class="variable">txt</span> <span class="variable">tftp</span><span class="operator">-</span><span class="variable">server</span> <span class="keyword">write</span> <span class="number">2</span> <span class="operator">/</span><span class="variable">MILANO</span><span class="operator">/</span> <span class="operator">.</span><span class="variable">cfg</span>
-</pre>
-<p>
-</p>
-<hr />
-<h1><a name="cisco_device_configurations">CISCO device configurations</a></h1>
+ccb.pl device.txt tftp-server write 2 /MILANO/ .cfg
+
+<h1>CISCO device configurations</h1>
 <p>The CISCO devices should have a minimal configuration for doing SNMP:</p>
 <p><em><strong>CISCO IOS Router/ Switch:</strong></em></p>
 <pre>
