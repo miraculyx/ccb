@@ -36,7 +36,7 @@ script, because there is no such Read-Write SNMP Community in a CISCO PIX Firewa
         .iso.org.dod.internet.mgmt.mib-2.system.sysName.0
         .iso.org.dod.internet.mgmt.mib-2.system.sysDescr.0
         .iso.org.dod.internet.mgmt.mib-2.system.sysObjectID.0</pre>
-<p>Timeout Parameter</p>
+<b>Timeout Parameter</b>
 <p>This is the amount of time, that the script should wait before doing the operation with the next 
 device, if the last operation was successfully. A successfully operation means, that the device 
 has communicated a positive aknowledge via a SNMPGET Request at the end of the operation. 
