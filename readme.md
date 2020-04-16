@@ -1,4 +1,4 @@
-Cisco Configuration Backup (CCB) - created by Gerhard Lange
+Cisco Configuration Backup (CCB)
 
 <h1><a name="synopsis">SYNOPSIS</a></h1>
 <p>This PERL Script fetches all  CISCO  device configurations (running configuration) 
@@ -285,9 +285,6 @@ to install the file &quot;perl58.dll&quot; in one of the directories, which will
 <p>
 </p>
 <hr />
-<h1><a name="author">AUTHOR</a></h1>
-<p>Gerhard Lange &lt;<a href="mailto:lange.gerhard@gmail.com">lange.gerhard@gmail.com</a>&gt;</p>
-
 </body>
 
 </html>
