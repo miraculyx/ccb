@@ -51,8 +51,8 @@ timeout of 2 seconds.</p>
 <h1>Device-file</h1>
 <p>The construction of the device-file can be made in two different ways.</p>
 <pre>
-CASE A:
 </pre>
+CASE A:
 <pre>
         <span class="variable">In</span> <span class="variable">the</span> <span class="variable">case</span><span class="operator">,</span> <span class="variable">you</span> <span class="variable">have</span> <span class="variable">different</span> <span class="variable">SNMP</span> <span class="variable">comunity</span><span class="operator">-</span><span class="variable">strings</span> <span class="keyword">for</span> <span class="variable">every</span> <span class="variable">device</span> <span class="variable">in</span> <span class="variable">your</span> <span class="variable">network</span><span class="operator">.</span>
         <span class="variable">You</span> <span class="variable">have</span> <span class="variable">to</span> <span class="variable">specify</span> <span class="variable">the</span> <span class="variable">devices</span> <span class="operator">(</span><span class="variable">IP</span> <span class="variable">address</span> <span class="keyword">or</span> <span class="variable">names</span><span class="operator">)</span> <span class="variable">in</span> <span class="variable">the</span> <span class="variable">file</span> <span class="keyword">and</span> <span class="variable">the</span> <span class="variable">coresponding</span> 
@@ -62,10 +62,10 @@ CASE A:
         <span class="variable">All</span> <span class="variable">comments</span> <span class="variable">start</span> <span class="variable">with</span> <span class="variable">an</span> <span class="string">"#"</span><span class="operator">,</span> <span class="string">"!"</span> <span class="keyword">or</span> <span class="variable">an</span> <span class="variable">whitespace</span> <span class="operator">(</span><span class="variable">SPACE</span><span class="operator">,</span> <span class="variable">TAB</span><span class="operator">).</span>
 </pre>
 <pre>
-        In the following example all the configuration files will be saved into the directory 
-        /ROMA/ of the TFTP-Server (192.168.1.1). 
-        The &quot;&quot; indicates to consider the Community-Strings from the device-file.
-        There is a timeout of 5 seconds between one and an other device fetching.</pre>
+In the following example all the configuration files will be saved into the directory 
+/ROMA/ of the TFTP-Server (192.168.1.1). 
+The &quot;&quot; indicates to consider the Community-Strings from the device-file.
+There is a timeout of 5 seconds between one and an other device fetching.</pre>
 <pre>
                 <span class="comment"># Start of the Network Device File</span>
                 <span class="variable">rtr</span><span class="operator">-</span><span class="variable">rm</span><span class="operator">-</span><span class="number">023</span><span class="operator">;</span><span class="keyword">write</span><span class="operator">;</span>
