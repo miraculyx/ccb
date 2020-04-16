@@ -53,6 +53,7 @@ timeout of 2 seconds.</p>
 <pre>
 <b>CASE A:</b>
 <pre>
+<p>
 In the case, you have different SNMP comunity-strings for every device in your network. You have to specify the devices
 IP address or names) in the file and the coresponding SNMP Read-Write Community String for this device. 
 The last ";" is not required, but it helps to see if there are spaces added at the end of a community-string.
@@ -61,6 +62,7 @@ You can insert comments in your device-file. All comments start with an "#", "!"
 In the following example all the configuration files will be saved into the directory /ROMA/ of the TFTP-Server (192.168.1.1). 
 The "" indicates to consider the Community-Strings from the device-file. There is a timeout of 5 seconds between one and an
 other device fetching.
+</p>
 
 /# Start of the Network Device File
 rtr-rm-023;write;
