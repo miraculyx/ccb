@@ -52,7 +52,7 @@ timeout of 2 seconds.</p>
 <p>The construction of the device-file can be made in two different ways.</p>
 <pre>
 </pre>
-CASE A:
+<b>CASE A:</b>
 <pre>
 In the case, you have different SNMP comunity-strings for every device in your network.
 You have to specify the devices (IP address or names) in the file and the coresponding 
@@ -66,19 +66,19 @@ In the following example all the configuration files will be saved into the dire
 The "" indicates to consider the Community-Strings from the device-file.
 There is a timeout of 5 seconds between one and an other device fetching.
 
-# Start of the Network Device File
+/# Start of the Network Device File
 rtr-rm-023;write;
 sw-rm-009;tulpe;
 192.168.1.253;orange;
 ! Backbone
 192.168.10.1;secret;  
 gw-rm-007;secret; 
-# End of Network Device File
+/# End of Network Device File
 
 ccb.pl device.txt 192.168.1.1 "" 5 /ROMA/
 
 
-CASE B: 
+<b>CASE B:</b>
                   
 In the case, you have the same SNMP comunity-string for every device, it is not 
 neccessary to insert the SNMP Community-string into the device-file. It is important 
@@ -93,12 +93,12 @@ In the following example all the configuration files will be saved into the dire
 There is a timeout of 2 seconds between one and an other device fetching. 
 All the configuration files have a Suffix of "*.cfg". The Default Suffix is "*.wri".
         
-! Start of the Network Device File
+/#  Start of the Network Device File
 gw-mi-23;
 sw-mi-core1;secret
 192.168.10.253
 192.168.10.1
-! End of Network Device File
+/# End of Network Device File
         
 ccb.pl device.txt tftp-server write 2 /MILANO/ .cfg
 
