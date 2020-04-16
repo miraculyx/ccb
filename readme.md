@@ -14,24 +14,6 @@
 <div name="index">
 <p><a name="__index__"></a></p>
 
-<ul>
-
-	<li><a href="#name">NAME</a></li>
-	<li><a href="#synopsis">SYNOPSIS</a></li>
-	<li><a href="#description">DESCRIPTION</a></li>
-	<li><a href="#device_file">Device-file</a></li>
-	<li><a href="#cisco_device_configurations">CISCO device configurations</a></li>
-	<li><a href="#tftp_server_setup_under_linux">TFTP-Server Setup under LINUX</a></li>
-	<li><a href="#tftp_server_under_windows">TFTP-Server under Windows</a></li>
-	<li><a href="#model_typs">Model-Typs</a></li>
-	<li><a href="#usage">USAGE</a></li>
-	<li><a href="#example">EXAMPLE</a></li>
-	<li><a href="#error_messages">ERROR Messages</a></li>
-	<li><a href="#standalone_under_windows">Standalone under Windows</a></li>
-	<li><a href="#copyright">COPYRIGHT</a></li>
-	<li><a href="#author">AUTHOR</a></li>
-</ul>
-
 <hr name="index" />
 </div>
 <!-- INDEX END -->
