@@ -1,20 +1,5 @@
 Cisco Configuration Backup (CCB) - created by Gerhard Lange
 
-<!-- INDEX BEGIN -->
-<div name="index">
-<p><a name="__index__"></a></p>
-
-<hr name="index" />
-</div>
-<!-- INDEX END -->
-
-<p>
-</p>
-<h1><a name="name">NAME</a></h1>
-<p>CCB - created by Gerhard Lange</p>
-<p>
-</p>
-<hr />
 <h1><a name="synopsis">SYNOPSIS</a></h1>
 <p>This PERL Script fetches all  CISCO  device configurations (running configuration) 
 to a seperate TFTP-Server via SNMP. 
