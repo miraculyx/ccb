@@ -252,10 +252,12 @@ of the device configuration file:</p>
 <p>
 </p>
 <hr />
-<h1><a name="standalone_under_windows">Standalone under Windows</a></h1>
+<h1>Standalone under Windows</h1>
 <p>This Script was tested with the PERL Version &quot;v5.8.3 built for MSWin32-x86-multi-thread&quot;.
-It is also possible to build this script as &quot;standalone&quot; with an PERL Packer. If the script is packed, it is not neccessary to install a PERL Interpreter, but you have 
-to install the file &quot;perl58.dll&quot; in one of the directories, which will be indicated by the DOS &quot;path&quot; command.</p>
+It is also possible to build this script as &quot;standalone&quot; with an PERL Packer.
+If the script is packed, it is not neccessary to install a PERL Interpreter, but you have 
+to install the file &quot;perl58.dll&quot; in one of the directories, which will
+be indicated by the DOS &quot;path&quot; command.</p>
 <p>
 </p>
 <hr />
