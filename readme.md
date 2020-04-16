@@ -57,9 +57,9 @@ timeout of 2 seconds.</p>
 <h1><a name="device_file">Device-file</a></h1>
 <p>The construction of the device-file can be made in two different ways.</p>
 <pre>
-
+</pre>
         CASE A:
-
+<pre>
         <span class="variable">In</span> <span class="variable">the</span> <span class="variable">case</span><span class="operator">,</span> <span class="variable">you</span> <span class="variable">have</span> <span class="variable">different</span> <span class="variable">SNMP</span> <span class="variable">comunity</span><span class="operator">-</span><span class="variable">strings</span> <span class="keyword">for</span> <span class="variable">every</span> <span class="variable">device</span> <span class="variable">in</span> <span class="variable">your</span> <span class="variable">network</span><span class="operator">.</span>
         <span class="variable">You</span> <span class="variable">have</span> <span class="variable">to</span> <span class="variable">specify</span> <span class="variable">the</span> <span class="variable">devices</span> <span class="operator">(</span><span class="variable">IP</span> <span class="variable">address</span> <span class="keyword">or</span> <span class="variable">names</span><span class="operator">)</span> <span class="variable">in</span> <span class="variable">the</span> <span class="variable">file</span> <span class="keyword">and</span> <span class="variable">the</span> <span class="variable">coresponding</span> 
         <span class="variable">SNMP</span> <span class="variable">Read</span><span class="operator">-</span><span class="variable">Write</span> <span class="variable">Community</span> <span class="variable">String</span> <span class="keyword">for</span> <span class="variable">this</span> <span class="variable">device</span><span class="operator">.</span> 
