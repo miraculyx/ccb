@@ -259,29 +259,3 @@ to install the file &quot;perl58.dll&quot; in one of the directories, which will
 <p>
 </p>
 <hr />
-<h1><a name="copyright">COPYRIGHT</a></h1>
-<pre>
-  Copyright (c) 2004 Gerhard Lange.</pre>
-<pre>
-        This is free software and is provided &quot;as is&quot; without express or implied warranty. 
-  
-        This copyright applies to all code included in this distribution.</pre>
-<pre>
-        This program is free software, you can redistribute it and/or modify it under 
-        the terms of the GNU General Public License as published by the Free Software 
-        Foundation version 2 of the License.</pre>
-<pre>
-        This program is distributed in the hope that it will be useful, but WITHOUT ANY 
-        WARRANTY, without even the implied warranty of MERCHANTABILITY or FITNESS FOR A 
-        PARTICULAR PURPOSE.</pre>
-<pre>
-        see the GNU General Public License for more details.</pre>
-<p>
-</p>
-<hr />
-<h1><a name="author">AUTHOR</a></h1>
-<p>Gerhard Lange &lt;<a href="mailto:lange.gerhard@gmail.com">lange.gerhard@gmail.com</a>&gt;</p>
-
-</body>
-
-</html>
