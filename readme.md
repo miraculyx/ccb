@@ -50,7 +50,6 @@ timeout of 2 seconds.</p>
 <p>The construction of the device-file can be made in two different ways.</p>
 <pre>
 <b>CASE A:</b>
-<pre>
 <p>In the case, you have different SNMP comunity-strings for every device in your network. You have to specify the devices
 IP address or names) in the file and the coresponding SNMP Read-Write Community String for this device. 
 The last ";" is not required, but it helps to see if there are spaces added at the end of a community-string.
